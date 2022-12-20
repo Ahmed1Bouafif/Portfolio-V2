@@ -75,7 +75,7 @@ const Portfolio = () => {
   ]
 
   return (
-    <section id="portfolio">
+    <section id="Academic">
       <h5>Studyin</h5>
       <h2>Academic Projects</h2>
 
@@ -97,6 +97,37 @@ const Portfolio = () => {
                     src={project.img}
                     alt={project.title}
                   />
+                  {!project.imgs.length > 1 ? (
+                    <></>
+                  ) : (
+                    <>
+                      <div
+                        onClick={
+                          project.others
+                            ? () => {
+                                setCarrousel(true)
+                                setCarrouselData(project.imgs)
+                              }
+                            : () => setCarrousel(false)
+                        }
+                        className="more"
+                      ></div>
+                      <p
+                        onClick={
+                          project.others
+                            ? () => {
+                                setCarrousel(true)
+                                setCarrouselData(project.imgs)
+                              }
+                            : () => setCarrousel(false)
+                        }
+                        className="imagesNumber"
+                      >
+                        {" "}
+                        +{project.imgs.length} images Click to see{" "}
+                      </p>
+                    </>
+                  )}
                 </div>
               ) : (
                 <div className="portfolio__item-image">

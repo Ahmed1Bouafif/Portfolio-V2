@@ -55,7 +55,8 @@ const Portfolio = () => {
     {
       id: 3,
       title: "BetSite",
-      others: false,
+      others: true,
+      imgs: [IMG2],
       img: IMG2,
       description: "Betsite Demo Platform Using External API",
       technologies: "React | SCSS | Redux",
@@ -64,7 +65,8 @@ const Portfolio = () => {
     {
       id: 4,
       title: "ChatBot",
-      others: false,
+      others: true,
+      imgs: [IMG3],
       img: IMG3,
       description: " Created Chat App with dummy data Design inspired by Dribble",
       technologies: "React TS | tailwind",
@@ -73,7 +75,8 @@ const Portfolio = () => {
     {
       id: 5,
       title: "Web Builder",
-      others: false,
+      others: true,
+      imgs: [IMG5],
       img: IMG5,
       description: "Web platform for creating web Sites",
       technologies: "React TS | tailwind ",
@@ -82,7 +85,8 @@ const Portfolio = () => {
     {
       id: 6,
       title: "Ui-Clean",
-      others: false,
+      others: true,
+      imgs: [IMG6],
       img: IMG6,
       description: "Full Responsive Simple Web Page",
       technologies: "HTML | CSS ",
@@ -111,6 +115,37 @@ const Portfolio = () => {
                 src={project.img}
                 alt={project.title}
               />
+              {!project.imgs.length > 1 ? (
+                <></>
+              ) : (
+                <>
+                  <div
+                    onClick={
+                      project.others
+                        ? () => {
+                            setCarrousel(true)
+                            setCarrouselData(project.imgs)
+                          }
+                        : () => setCarrousel(false)
+                    }
+                    className="more"
+                  ></div>
+                  <p
+                    onClick={
+                      project.others
+                        ? () => {
+                            setCarrousel(true)
+                            setCarrouselData(project.imgs)
+                          }
+                        : () => setCarrousel(false)
+                    }
+                    className="imagesNumber"
+                  >
+                    {" "}
+                    +{project.imgs.length} images Click to see{" "}
+                  </p>
+                </>
+              )}
             </div>
             <div className="portfolio__item-content">
               <h3>{project.title}</h3>

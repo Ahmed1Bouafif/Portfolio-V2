@@ -16,7 +16,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
-  transition-duration: 200ms;
+  transition-duration: 120ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* --transform-translate-x: -50%;
   --transform-translate-y: -50%; */
