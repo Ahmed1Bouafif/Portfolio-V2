@@ -28,7 +28,7 @@ const Intro = () => {
               <small>20+ Completed Projects</small>
             </article>
           </div>
-          <p>I’ve spent the last several months in a remote environment, working with HTML, CSS, JavaScript,React ,Angular building everything from landing pages to APIs. Studying in a Tunisian BootCamp helped me collaborate with fellow developers. Additionally, Working solo on some projects after i get 3 months experince with Kuwait Bits company (Remote) has helped me become efficient, productive, and fast even in a very stressful environment, which is an important skill in the tech industry.</p>
+          <p>I’ve spent the last several months in a remote environment, working with HTML, CSS, JavaScript,React ,Angular building everything from landing pages to APIs. Studying in a Tunisian BootCamp helped me collaborate with fellow developers. Additionally, Working solo on some projects after i get 6 months experince with Kuwait Bits company (Remote) has helped me become efficient, productive, and fast even in a very stressful environment, which is an important skill in the tech industry.</p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
